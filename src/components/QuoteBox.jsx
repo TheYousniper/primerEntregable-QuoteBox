@@ -2,7 +2,7 @@ import React from 'react'
 import BtnQuote from './BtnQuote'
 import TextQuoteAndAuthor from './TextQuoteAndAuthor'
 
-const QuoteBox = ({quoteRandom, handleClick, colorRandom}) => {
+const QuoteBox = ({quoteRandom, handleClick, colorRandom, classNameCard}) => {
 
     const objStyle = {
         color: colorRandom,
@@ -13,7 +13,7 @@ const QuoteBox = ({quoteRandom, handleClick, colorRandom}) => {
     }
 
   return (
-    <article className='card' style={objStyle}>
+    <article className={classNameCard} style={objStyle}>
         <i className="card__icon fa-solid fa-quote-left"></i>
         <TextQuoteAndAuthor
         quoteRandom={quoteRandom}

@@ -24,16 +24,31 @@
 }
 
 .card{
+  position: relative;
   background-color: white;
   max-width: 500px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: color 0.5s, transform 0.5s ease-out; 
 }
 .card__icon{
   font-size: 45px;
   float: left;
   padding-right: 10px;
+}
+
+.card-transform{
+   transform: translateX(-100vw);
+}
+
+.card-transitionNone{
+  transition: none;
+  transform: translateX(100vw);
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .card__quote{
